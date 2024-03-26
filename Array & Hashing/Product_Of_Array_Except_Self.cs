@@ -26,5 +26,5 @@ public class Solution {
     }
 }
 
-//Time Complexity: O(n)
-//Space Complxity: O(n)
+//Time Complexity: O(n) performs two passes through the input array,
+//Space Complxity: O(n) used additional array 'res' to store product prefix and product postfix
