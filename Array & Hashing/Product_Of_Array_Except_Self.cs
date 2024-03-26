@@ -13,7 +13,7 @@ public class Solution {
         // First pass: calculate prefix products
         for(int i = 0; i < nums.Length; i++){
             res[i] = prefix; // Store the product of elements to the left of the current index in the result array
-            prefix *= nums[i]; // Update the prefix product by multiplying it with the current element
+            prefix *= nums[i]; // Update the prefix product by multiplying it with the current element 
         }
 
         // Second pass: calculate postfix products and update result array
@@ -27,4 +27,5 @@ public class Solution {
 }
 
 //Time Complexity: O(n) performs two passes through the input array,
-//Space Complxity: O(n) used additional array 'res' to store product prefix and product postfix
+//Space Complxity: O(n) used additional array 'res' of size n to store product prefix and product postfix and where
+        //is the length of the input array 'nums'
